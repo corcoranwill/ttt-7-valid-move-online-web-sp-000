@@ -1,7 +1,7 @@
 # code your #valid_move? method here
 def valid_move?(board, index)
   #if submitted index is present on the game board AND not already filled then return true
-  if index >= 0 && <= 8
+  if index >= 0 && index <= 8
     valid_position = position_taken?(board, index)
     if valid_position == false
       true
